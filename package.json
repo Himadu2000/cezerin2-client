@@ -12,13 +12,13 @@
     "shopping cart api"
   ],
   "homepage": "https://cezerin.org",
-  "bugs": "https://github.com/cezerin2/client/issues",
+  "bugs": "https://github.com/Cezerin2/cezerin2-client/issues",
   "license": "Unlicense",
   "author": "Restmount, Himadu Sirimanna",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cezerin2/client"
+    "url": "https://github.com/Cezerin2/cezerin2-client"
   },
   "scripts": {
     "build": "babel src -d lib",
@@ -54,7 +54,7 @@
     "query-string": "^6.1.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.4.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
