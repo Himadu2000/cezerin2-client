@@ -1,9 +1,9 @@
 export default class Countries {
 	constructor(client) {
-		this.client = client;
+		this.client = client
 	}
 
 	list() {
-		return this.client.get('/countries');
+		return this.client.get("/countries")
 	}
 }

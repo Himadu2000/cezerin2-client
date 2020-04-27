@@ -1,4 +1,4 @@
-import RestClient from './restClient';
+import RestClient from "./restClient"
 
 export default class AjaxClient extends RestClient {
 	getConfig(method, data, cookie) {
@@ -6,23 +6,23 @@ export default class AjaxClient extends RestClient {
 			credentials: this.getCredentialsConfig(this.baseUrl),
 			method,
 			headers: {
-				'Content-Type': 'application/json'
-			}
-		};
+				"Content-Type": "application/json",
+			},
+		}
 
 		if (cookie) {
-			config.headers.Cookie = cookie;
+			config.headers.Cookie = cookie
 		}
 
 		if (data) {
-			config.body = JSON.stringify(data);
+			config.body = JSON.stringify(data)
 		}
-		return config;
+		return config
 	}
 
 	getCredentialsConfig(baseUrl) {
 		const includePrefix =
-			baseUrl.includes('http://') || baseUrl.includes('https://');
-		return includePrefix ? 'include' : 'same-origin';
+			baseUrl.includes("http://") || baseUrl.includes("https://")
+		return includePrefix ? "include" : "same-origin"
 	}
 }

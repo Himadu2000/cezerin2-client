@@ -1,17 +1,17 @@
 export default class ThemeSettings {
 	constructor(client) {
-		this.client = client;
+		this.client = client
 	}
 
 	retrieve() {
-		return this.client.get('/theme/settings');
+		return this.client.get("/theme/settings")
 	}
 
 	update(data) {
-		return this.client.put('/theme/settings', data);
+		return this.client.put("/theme/settings", data)
 	}
 
 	retrieveSchema() {
-		return this.client.get('/theme/settings_schema');
+		return this.client.get("/theme/settings_schema")
 	}
 }
